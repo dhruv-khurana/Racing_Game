@@ -10,7 +10,7 @@ pygame.init()
 mixer.init()
 
 # Load music
-mixer.music.load("images/Music")
+mixer.music.load("images/Music.mp3")
 mixer.music.set_volume(0.4)
 mixer.music.play()
 
@@ -22,10 +22,10 @@ font_small = pygame.font.SysFont("Arial Black", 15)
 
 # Load and scale images
 TRACK = scale_image(pygame.image.load("images/Track.png"), 0.85)
-TRACK_BORDER = scale_image(pygame.image.load("images/Track_Border"), 0.85)
-FINISH = scale_image(pygame.image.load("images/Finish_Line"), 0.65)
-RED_CAR = scale_image(pygame.image.load("images/Red_Car"), 0.015)
-BACKGROUND = scale_image(pygame.image.load("files/imgs/Background_Image"), 15)
+TRACK_BORDER = scale_image(pygame.image.load("images/Track_Border.png"), 0.85)
+FINISH = scale_image(pygame.image.load("images/Finish_Line.png"), 0.65)
+RED_CAR = scale_image(pygame.image.load("images/Red_Car.png"), 0.015)
+BACKGROUND = scale_image(pygame.image.load("files/imgs/Background_Image.png"), 15)
 
 # Get dimensions and create masks
 track_width, track_height = TRACK.get_width(), TRACK.get_height()
