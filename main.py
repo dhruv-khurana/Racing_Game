@@ -28,13 +28,13 @@ font = pygame.font.SysFont("arialblack", 20)
 TEXT_COL = (255, 255, 255)
 
 #load button images
-title_screen_img = pygame.image.load("images/Title_Screen").convert_alpha()
-rankings_img = pygame.image.load("images/Rankings_Button").convert_alpha()
-credits_img = pygame.image.load("images/Credits_Button").convert_alpha()
-settings_img = pygame.image.load('images/Settings_Button').convert_alpha()
-time_trials_img = pygame.image.load('images/Time_Trials_Button').convert_alpha()
-vs_mode_img = pygame.image.load('images/VS_Mode_Button').convert_alpha()
-back_img = pygame.image.load("images/Back").convert_alpha()
+title_screen_img = pygame.image.load("images/Title_Screen.png").convert_alpha()
+rankings_img = pygame.image.load("images/Rankings_Button.png").convert_alpha()
+credits_img = pygame.image.load("images/Credits_Button.png").convert_alpha()
+settings_img = pygame.image.load('images/Settings_Button.png').convert_alpha()
+time_trials_img = pygame.image.load('images/Time_Trials_Button.png').convert_alpha()
+vs_mode_img = pygame.image.load('images/VS_Mode_Button.png').convert_alpha()
+back_img = pygame.image.load("images/Back.png").convert_alpha()
 
 
 #create button instances
