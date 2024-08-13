@@ -10,7 +10,7 @@ pygame.init()
 mixer.init()
 
 # Load music
-mixer.music.load("images/Title Screen - Mario Kart Wii")
+mixer.music.load("images/Music")
 mixer.music.set_volume(0.4)
 mixer.music.play()
 
@@ -20,16 +20,12 @@ font_large = pygame.font.SysFont("Arial Black", 40)
 font_medium = pygame.font.SysFont("Arial Black", 25)
 font_small = pygame.font.SysFont("Arial Black", 15)
 
-# Load high score
-with open("high_score.txt", 'r') as f:
-    best = int(f.read())
-
 # Load and scale images
-TRACK = scale_image(pygame.image.load("images/final track.png"), 1)
-TRACK_BORDER = scale_image(pygame.image.load("images/final track (1).png"), 1)
-FINISH = scale_image(pygame.image.load("images/finish.png"), 0.75)
-RED_CAR = scale_image(pygame.image.load("images/clipart396865.png"), 0.015)
-BACKGROUND = scale_image(pygame.image.load("images/final track (2).png"), 15)
+TRACK = scale_image(pygame.image.load("images/Track.png"), 0.85)
+TRACK_BORDER = scale_image(pygame.image.load("images/Track_Border"), 0.85)
+FINISH = scale_image(pygame.image.load("images/Finish_Line"), 0.65)
+RED_CAR = scale_image(pygame.image.load("images/Red_Car"), 0.015)
+BACKGROUND = scale_image(pygame.image.load("files/imgs/Background_Image"), 15)
 
 # Get dimensions and create masks
 track_width, track_height = TRACK.get_width(), TRACK.get_height()
