@@ -33,7 +33,6 @@ def credits():
         
         draw_text("Credits", font_large, TEXT_COL, 325, 100)
         draw_text("Developers:", font_medium, TEXT_COL, 75, 200)
-        draw_text("Ben Wallace, CEO", font_small, TEXT_COL, 75, 250)
         draw_text("Dhruv Khurana, Main Programmer", font_small, TEXT_COL, 75, 300)
         draw_text("Aaron Lin, UI Design/Programmer", font_small, TEXT_COL, 75, 350)
 
