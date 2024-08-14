@@ -30,8 +30,8 @@ TRACK = scale_image(pygame.image.load("images/Track.png"), 0.85)
 TRACK_BORDER = scale_image(pygame.image.load("images/Track_Border.png"), 0.85)
 FINISH = scale_image(pygame.image.load("images/Finish_Line.png"), 0.65)
 RED_CAR = scale_image(pygame.image.load("images/Red_Car.png"), 0.015)
-BLUE_CAR = scale_image(pygame.image.load("files/imgs/Blue_Car.png"), 0.037)
-BACKGROUND = scale_image(pygame.image.load("files/imgs/Background_Image.png"), 15)
+BLUE_CAR = scale_image(pygame.image.load("images/Blue_Car.png"), 0.037)
+BACKGROUND = scale_image(pygame.image.load("images/Background_Image.png"), 15)
 
 # Get track dimensions and create masks
 
