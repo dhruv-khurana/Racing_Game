@@ -25,7 +25,7 @@ TRACK = scale_image(pygame.image.load("images/Track.png"), 0.85)
 TRACK_BORDER = scale_image(pygame.image.load("images/Track_Border.png"), 0.85)
 FINISH = scale_image(pygame.image.load("images/Finish_Line.png"), 0.65)
 RED_CAR = scale_image(pygame.image.load("images/Red_Car.png"), 0.015)
-BACKGROUND = scale_image(pygame.image.load("files/imgs/Background_Image.png"), 15)
+BACKGROUND = scale_image(pygame.image.load("images/Background_Image.png"), 15)
 
 # Get dimensions and create masks
 track_width, track_height = TRACK.get_width(), TRACK.get_height()
@@ -50,8 +50,8 @@ BG_COLOR = (157, 217, 243)  # Light blue
 high_scores = []
 def load_high_scores():
     global high_scores
-    if os.path.exists("the_high_scores.json"):
-        with open("the_high_scores.json", "r") as file:
+    if os.path.exists("high_scores.JSON"):
+        with open("high_scores.JSON", "r") as file:
             high_scores = json.load(file)
 
 # Save high scores to file
@@ -200,7 +200,6 @@ def play_game():
     images = [(TRACK_BORDER, (0, 0)), (TRACK, (0, 0)), (FINISH, FINISH_POSITION)]
     start_time = pygame.time.get_ticks()
     show_leaderboard_flag = False
-    start_time = 0
     while run:
         clock.tick(FPS)
         elapsed_time = pygame.time.get_ticks() - start_time
@@ -234,7 +233,6 @@ def play_game():
                     handle_high_scores(elapsed_time)
                     player_car.reset()
                     show_leaderboard_flag = True
-                    start_time = pygame.time.get_ticks()
 
     pygame.quit()
 
